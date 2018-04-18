@@ -7,8 +7,8 @@ class Pokemon
     def initialize(id)
       @id = id
       binding.pry
-      @name = name
-      @type = type
+      @name = id[name]
+      @type = id[type]
       @db = db
       binding.pry
       @@all << self
