@@ -21,9 +21,12 @@ class Pokemon
     end
 
     def self.find(id, db)
-      bob = "SELECT * FROM db WHERE id = ?"
-      # Pokemon.new(id)
-      bob
+      sql = <<-SQL
+        SELECT * FROM db WHERE id = ?
+      -- # Pokemon.new(id)
+      SQL
+
+      results = db[:conn].execute(sql, idea)
     end
 
 
