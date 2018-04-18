@@ -9,6 +9,7 @@ class Pokemon
       # @name = name
       # @type = :type
       # @db = db
+      binding.pry
       @@all << self
     end
 
