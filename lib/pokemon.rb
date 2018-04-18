@@ -15,7 +15,7 @@ class Pokemon
       @id = id
       @name = name
       @type = type
-      @hp = hp
+      @hp = 60
       @db = db
       binding.pry
     end
