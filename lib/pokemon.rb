@@ -6,8 +6,8 @@ class Pokemon
     end
 
     def self.find(id, db)
-      db.execute("SELECT * FROM pokemon WHERE id=?", id).first
-      binding.pry
+      found = db.execute("SELECT * FROM pokemon WHERE id=?", id).first
+      Pokemon.new(found[0][0])
     end
 
     def initialize(id)
