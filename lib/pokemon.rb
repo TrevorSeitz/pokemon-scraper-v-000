@@ -6,9 +6,9 @@ class Pokemon
 
     def initialize(id)
       @id = id
-      # @name = name
-      # @type = :type
-      # @db = db
+      @name = id[:name]
+      @type = id[:type]
+      @db = id[:db]
       binding.pry
       @@all << self
     end
