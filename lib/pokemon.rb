@@ -21,8 +21,9 @@ class Pokemon
     end
 
     def self.find(id, db)
-      "SELECT * FROM db WHERE id = ?"
-      Pokemon.new(id)
+      bob = "SELECT * FROM db WHERE id = ?"
+      # Pokemon.new(id)
+      bob
     end
 
 
