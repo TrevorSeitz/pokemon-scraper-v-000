@@ -6,13 +6,10 @@ class Pokemon
     end
 
     def self.find(id, db)
-      # binding.pry
-      Pokemon.new(db.execute("SELECT * FROM pokemon WHERE id=?", id).first)
-      # binding.pry
-      # Pokemon.new(poke[1], poke[2], poke[3], db)
+      db.execute("SELECT * FROM pokemon WHERE id=?", id).first
     end
 
-    def initialize(id, name, type, db)
+    def initialize(id)
       @id = id
       @name = name
       @type = type
