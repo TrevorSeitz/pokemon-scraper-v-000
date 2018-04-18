@@ -23,6 +23,7 @@ class Pokemon
 
     def self.find(id, db)
       "SELECT * FROM db WHERE id = ?"
+      binding.pry
       Pokemon.new(id)
     end
 
