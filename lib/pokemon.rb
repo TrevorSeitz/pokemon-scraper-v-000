@@ -9,7 +9,7 @@ class Pokemon
       # binding.pry
       poke = db.execute("SELECT * FROM pokemon WHERE id=?", id).first
       # binding.pry
-      Pokemon.new(poke[1], poke[2], poke[3], db)
+      # Pokemon.new(poke[1], poke[2], poke[3], db)
     end
 
     def initialize(id, name, type, db)
