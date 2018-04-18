@@ -24,7 +24,7 @@ class Pokemon
 
     def self.find(id, db)
       "SELECT * FROM db WHERE id = ?"
-      binding.pry
+      # binding.pry
       Pokemon.new(id)
     end
 
