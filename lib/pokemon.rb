@@ -11,7 +11,7 @@ class Pokemon
       Pokemon.new(found[0], found[1], found[2])
     end
 
-    def initialize(id, name, type)
+    def initialize(id, name=nil, type=nil)
       @id = id
       @name = name
       @type = type
