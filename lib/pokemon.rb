@@ -11,10 +11,11 @@ class Pokemon
       Pokemon.new(found[0], found[1], found[2])
     end
 
-    def initialize(id, name=nil, type=nil)
+    def initialize(id, name=nil, type=nil, hp=60)
       @id = id
       @name = name
       @type = type
+      @hp = hp
       @db = db
     end
 
