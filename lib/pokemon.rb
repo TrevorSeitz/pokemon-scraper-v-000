@@ -7,12 +7,12 @@ class Pokemon
 
     def self.find(id, db)
       # binding.pry
-      poke = db.execute("SELECT * FROM pokemon WHERE id=?", id).first
+      db.execute("SELECT * FROM pokemon WHERE id=?", id).first
       # binding.pry
       # Pokemon.new(poke[1], poke[2], poke[3], db)
     end
 
-    def initialize(name, type, db)
+    def initialize(id, name, type, db)
       @id = id
       @name = name
       @type = type
