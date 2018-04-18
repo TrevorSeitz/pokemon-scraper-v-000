@@ -26,7 +26,7 @@ class Pokemon
       -- # Pokemon.new(id)
       SQL
 
-      results = db[:conn].execute(sql, idea)
+      results = db[id].execute(sql, id)
     end
 
 
