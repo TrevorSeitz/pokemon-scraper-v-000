@@ -6,7 +6,7 @@ class Pokemon
 
     def initialize(id)
       @id = id
-      @name = :name
+      @name = name
       @type = type
       @db = db
       @@all << self
@@ -21,7 +21,7 @@ class Pokemon
     end
 
     def self.find(id, db)
-      "SELECT * FROM db WHERE id = id"
+      "SELECT * FROM db WHERE id = ?"
       Pokemon.new(id)
     end
 
