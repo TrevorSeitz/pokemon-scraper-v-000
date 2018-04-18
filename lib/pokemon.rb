@@ -5,12 +5,10 @@ class Pokemon
     attr_accessor :id, :name, :type, :db
 
     def initialize(id)
-      binding.pry
       @id = id
       @name = name
       @type = type
       @db = db
-      # binding.pry
       @@all << self
     end
 
