@@ -9,7 +9,7 @@ class Pokemon
       @name = id[:name]
       @type = id[:type]
       @db = id[:db]
-      binding.pry
+      # binding.pry
       @@all << self
     end
 
