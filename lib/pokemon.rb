@@ -10,7 +10,7 @@ class Pokemon
       Pokemon.new(found[0][0])
     end
 
-    def initialize(id)
+    def initialize(id, name, type)
       @id = id
       @name = name
       @type = type
