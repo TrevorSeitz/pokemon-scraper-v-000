@@ -22,7 +22,7 @@ class Pokemon
 
     def self.find(id, db)
       "SELECT * FROM db WHERE id = ?"
-      Pokemon.new(id)
+      Pokemon.new(:id)
     end
 
 
