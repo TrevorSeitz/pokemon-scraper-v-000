@@ -6,9 +6,11 @@ class Pokemon
 
     def initialize(id)
       @id = id
+      binding.pry
       @name = name
       @type = type
       @db = db
+      binding.pry
       @@all << self
     end
 
@@ -22,7 +24,6 @@ class Pokemon
 
     def self.find(id, db)
       "SELECT * FROM db WHERE id = ?"
-      binding.pry
       Pokemon.new(id)
     end
 
