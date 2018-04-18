@@ -7,7 +7,7 @@ class Pokemon
 
     def self.find(id, db)
       # binding.pry
-      db.execute("SELECT * FROM pokemon WHERE id=?", id).first
+      Pokemon.new(db.execute("SELECT * FROM pokemon WHERE id=?", id).first)
       # binding.pry
       # Pokemon.new(poke[1], poke[2], poke[3], db)
     end
