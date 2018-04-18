@@ -6,7 +6,7 @@ class Pokemon
 
     def initialize(id)
       @id = id
-      @name = @id[2]
+      @name = @id[name]
       @type = @id[3]
       @db = db
       @@all << self
