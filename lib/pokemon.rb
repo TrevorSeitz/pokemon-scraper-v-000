@@ -12,7 +12,7 @@ class Pokemon
       # Pokemon.new(poke[1], poke[2], poke[3], db)
     end
 
-    def initialize(id, name, type, db)
+    def initialize(name, type, db)
       @id = id
       @name = name
       @type = type
